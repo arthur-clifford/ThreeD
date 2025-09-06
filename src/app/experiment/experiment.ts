@@ -50,7 +50,7 @@ export class Experiment {
     this.camera.position.z = 500;
     this.scene.add(this.camera);
 
-    this.geometries.push(new THREE.SphereGeometry(64, 180, 90));
+    this.geometries.push(new THREE.SphereGeometry(200, 180, 90));
     this.material = new THREE.MeshBasicMaterial({ wireframe: true, color: 0xff0000});
     this.mesh = new THREE.Mesh(this.geometries[0], this.material);
     this.scene.add(this.mesh);
